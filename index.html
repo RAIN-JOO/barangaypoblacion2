@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Website</title>
+    <style>
+        body {
+            background-image: url(bg.png);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style for the logo */
+        .logo {
+            height: 60px;
+            margin-right: auto; /* Adjusted for responsiveness */
+        }
+
+        /* Style for the navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Align items horizontally */
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the pop-up */
+        #newsletter-popup {
+            display: none; /* Initially hidden */
+            position: fixed; /* Fixed positioning */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the pop-up */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+        .popup-close {
+            cursor: pointer;
+            font-size: 1.2rem;
+            float: right;
+        }
+
+        #popupOverlay {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999; /* Below the pop-up but above other content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logoo.jpg" alt="Barangay Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="barangay.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popupOverlay"></div>
+    <div id="newsletter-popup">
+        <span class="popup-close" onclick="closePopup()">X</span>
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="newsletter-form">
+            <label for="newsletter-name">Name:</label><br>
+            <input type="text" id="newsletter-name" name="newsletter-name" required><br><br>
+            <label for="newsletter-email">Email:</label><br>
+            <input type="email" id="newsletter-email" name="newsletter-email" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="popup.js"></script>
+</body>
+</html>

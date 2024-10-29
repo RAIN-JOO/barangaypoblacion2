@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Services</title>
+    <style>
+        body {
+            background-image: url(bg2.png);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            color: white;
+            display: flex;
+
+        }
+        .logo {
+            height: 60px;
+            margin-right: 500px;
+
+        }
+
+        /* Style for the logo */
+        .logo {
+            height: 60px;
+            margin-right: 500px;
+
+        }
+
+        /* Style for the navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Align items horizontally */
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logoo.jpg" alt="Logo" class="logo">
+
+        <nav>
+            <ul>
+                
+                <li><a href="barangay.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+         
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="service-card" id="health">
+                <h2>Health Services</h2>
+                <p>Our Barangay Health Center provides basic health care, immunizations, first aid, and family planning services for all residents.</p>
+            </div>
+
+            <div class="service-card" id="security">
+                <h2>Peace and Order</h2>
+                <p>Barangay Tanods help maintain peace and order. Our Barangay make sure that everyone is safe at night.</p>
+            </div>
+
+            <div class="service-card" id="education">
+                <h2>Education Services</h2>
+                <p>Our Barangay early childhood education at the Barangay Daycare Center and vocational training for skills development and livelihood opportunities.
+                    Our Barangay also offers free school supplies.
+                </p>
+            </div>
+
+            <div class="service-card" id="social">
+                <h2>Social Services</h2>
+                <p>Our Barangay provide assistance to senior citizens, PWDs, and offer disaster relief programs. We also handle civil registry services like issuing Barangay Certificates.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
